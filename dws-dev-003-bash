@@ -47,7 +47,7 @@ case $1 in
                     
                     if [[ $number -eq 0 && $interval -eq 0 ]]; then
                     
-                    for i in $number; do
+	                for (( i=1;i<=$number;i++)); do
                     echo "Doing command again ..."
                     sleep $interval
                     fcommand
@@ -62,7 +62,7 @@ case $1 in
                      
                     
                    else 
-                   for i in $TRY_NUMBER; do
+	                for (( i=1;i<=$$TRY_INTERVAL;i++)); do
                     echo "Doing command again ..."
                     sleep $TRY_INTERVAL
                     fcommand
