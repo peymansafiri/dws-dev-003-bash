@@ -1,10 +1,9 @@
 #!/bin/bash
 
-TRY_INTERVAL=5
-TRY_NUMBER=12
-TRY_COMMAND=NULL
-number=0
-interval=0
+number=12
+interval=15
+command=NULL
+
 
 fcommand(){
     echo "Doing command ... "
